@@ -6,5 +6,5 @@ applications:
       - route: pal-tracker-allison-henry.apps.evans.pal.pivotal.io
       - route: pal-tracker-forgiving-wildebeest.apps.evans.pal.pivotal.io
     env:
-      WELCOME_MESSAGE: Hello from Review Environment
+      WELCOME_MESSAGE: Hello from Review Environment 
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
