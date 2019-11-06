@@ -75,7 +75,7 @@ public class JdbcTimeEntryRepository implements TimeEntryRepository {
     @Override
     public void delete(long timeEntryId) {
         String query = "DELETE FROM time_entries WHERE id = ?";
-        jdbcTemplate.update(query, new Object[]{timeEntryId});
+        jdbcTemplate.update(query, timeEntryId);
     }
 
     private final RowMapper<TimeEntry> mapper = (rs, rowNum) -> new TimeEntry(
